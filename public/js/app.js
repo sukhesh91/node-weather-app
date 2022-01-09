@@ -14,8 +14,8 @@ searchForm.addEventListener('submit', (e) => {
             msg2.textContent = ''
         }
         else{
-            msg1.textContent = data.location
-            msg2.textContent = 'Temperature : ' + data.temperature
+            msg1.textContent = data.location +'. Local time is ' + data.localtime
+            msg2.textContent = 'It is currently ' + data.weatherdesc + ' and ' + data.temperature + ' degrees out there. And it feels like ' + data.feels_like + ' degrees.'
         }
     })
 })
